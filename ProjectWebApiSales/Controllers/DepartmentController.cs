@@ -15,10 +15,6 @@ namespace ProjectWebApiSales.Controllers
             list.Add(new Department { Id = 1, Name = "Eletronicos"});
             list.Add(new Department { Id = 2, Name = "Fashion"});
 
-
-
-
-
             return View(list);
         }
     }

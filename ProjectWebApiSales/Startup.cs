@@ -37,7 +37,8 @@ namespace ProjectWebApiSales
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<ProjectWebApiSalesContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("ProjectWebApiSalesContext")));
+                    options.UseMySql(Configuration.GetConnectionString("ProjectWebApiSalesContext"), builder =>
+                      builder.MigrationsAssembly("ProjectWebApiSales")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

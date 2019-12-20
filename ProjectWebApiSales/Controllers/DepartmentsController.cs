@@ -13,7 +13,7 @@ namespace ProjectWebApiSales.Controllers
     {
         private readonly ProjectWebApiSalesContext _context;            //<--dependencia com a class DBcontext
 
-        public DepartmentsController(ProjectWebApiSalesContext context) //<--Contrutor para indeçõa de dependencia
+        public DepartmentsController(ProjectWebApiSalesContext context) //<--Contrutor para injeçõa de dependencia
         {
             _context = context;
         }

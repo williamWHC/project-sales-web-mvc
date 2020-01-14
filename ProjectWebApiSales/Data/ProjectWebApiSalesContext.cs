@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ProjectWebApiSales.Models.Enums;
 
 namespace ProjectWebApiSales.Models
 {
@@ -13,6 +14,9 @@ namespace ProjectWebApiSales.Models
         {
         }
 
-        public DbSet<ProjectWebApiSales.Models.Department> Department { get; set; }
+        public DbSet<Department> Department { get; set; }
+        //add DbSet in DbContext 
+        public DbSet<SalesRecord> SalesRecords { get; set; }
+        public DbSet<Seller> Sellers { get; set; }
     }
 }
